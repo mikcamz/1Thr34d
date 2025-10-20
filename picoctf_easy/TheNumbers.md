@@ -1,4 +1,4 @@
-![[the_numbers.png]]
+<img width="387" height="217" alt="the_numbers" src="https://github.com/user-attachments/assets/56da5a6e-eebe-4673-880f-92f8be9dffb0" />
 
 After trying to match the first 8 char to the flag format using ascii, i found out that it is indeed ascii, heres the table
 ```plain
