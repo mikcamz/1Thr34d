@@ -11,19 +11,20 @@ final_message = ""
 
 # every character in ascii values range from 0 to 127 which equals 2 ^ 7
 for guessing in range(128):
-    character = bytes(guessing)
-
     decrypt_message = bytearray()
 
+    # decrypt the message by XOR with guessing and get the plain text
     for byte in data_byte:
         decrypt_message.append(byte ^ guessing)
-
     plaintext = decrypt_message.decode("ascii")
 
+    # evaluate the score
     score = sum(i.isalpha() for i in plaintext)
 
+    # this just for debug
     print(f"decrypt: {plaintext}  | {score}")
 
+    # get the highest score
     if score > max_score:
         final_message = plaintext
         max_score = score
@@ -31,3 +32,6 @@ for guessing in range(128):
 
 print("---------")
 print(f"final answer: {final_message}  | {max_score}")
+
+# final answer: Cooking MC's like a pound of bacon  | 27
+# I don't know if this correct but since it sound natural, I will assuming that it is the correct answer
