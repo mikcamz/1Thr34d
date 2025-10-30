@@ -1,4 +1,4 @@
-# Bài tập về nhà số 3 của team 1Thr34d
+# Bài tập về nhà của team 1Thr34d
 
 - Trần Võ Minh Khang
 - Quách Cường
