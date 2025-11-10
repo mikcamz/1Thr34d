@@ -14,19 +14,23 @@ Bài này mô phỏng cho ta cách hoạt động khi mà mình đăng nhập v�
 
 Vô bài thì mình nhập bla bla:
 
-![[Pasted image 20251109111617.png]]
+<img width="475" height="323" alt="Pasted image 20251109111617" src="https://github.com/user-attachments/assets/491e2be1-d9c8-4b1f-a2d0-f37bc5924e39" />
+
 
 Sau đó nó sẽ hiện trang nhập mã OTP (one time password), mình nhập đại `1234`:
 
-![[Pasted image 20251109111808.png]]
+<img width="429" height="123" alt="Pasted image 20251109111808" src="https://github.com/user-attachments/assets/a3001bfe-9c44-4bdf-8178-df808569b87f" />
+
 
 Uầy đương nhiên là sai ròi:
 
-![[Pasted image 20251109111824.png]]
+<img width="212" height="45" alt="Pasted image 20251109111824" src="https://github.com/user-attachments/assets/8257cf3f-a103-4c68-8a8e-428029874411" />
 
-Và mình sẽ dùng Burp để tìm hiểu nhá:
 
-![[Pasted image 20251109112002.png]]
+Và mình sẽ dùng Burp để tìm hiểu nhá ;-;
+
+<img width="1585" height="892" alt="Pasted image 20251109112002" src="https://github.com/user-attachments/assets/ccaea16d-d384-4c21-82f9-53fb7efb4bea" />
+
 
 Chuyển code qua công cụ Repeater.
 Và mình thấy đây là đoạn code được chuyển đi với phương thức POST.
@@ -46,6 +50,7 @@ Vì vậy mình đơn giản chỉ cần thay đổi mã OTP theo đúng là đ�
 
 Loay hoay một hồi mình xóa nó luôn và gửi lại request đến server là lụm flag ngay phần response:
 
-![[Pasted image 20251109112449.png]]
+<img width="1210" height="554" alt="Pasted image 20251109112449" src="https://github.com/user-attachments/assets/1cc76fd8-2b84-40ee-9467-62224191ed00" />
+
 
 => `picoCTF{#0TP_Bypvss_SuCc3$S_2e80f1fd}`
