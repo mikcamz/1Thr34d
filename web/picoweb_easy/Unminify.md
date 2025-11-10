@@ -12,7 +12,8 @@ Cách 1:
 
 Ctrl + U để đọc code, thì thấy code này được dàn trải ra trên một dòng, sau đó tôi dùng Ctrl + F, gõ key "picoCTF{" để tìm flag, và tôi thấy nó:
 
-![[Pasted image 20251110092502.png]]
+<img width="1289" height="253" alt="Pasted image 20251110092502" src="https://github.com/user-attachments/assets/7c881077-5276-43e1-9cad-fa2e7c3920b3" />
+
 
 => `picoCTF{pr3tty_c0d3_743d0f9b}`
 
