@@ -13,13 +13,15 @@ Vô đọc hint là thấy mình phải làm từng bước từng bước => fl
 
 Đầu tiên nhấp vô link, thì hiện ra site khá bình thường, vào kiểm tra thì thấy mảnh đầu tiên của flag:
 
-![[Pasted image 20251109100310.png]]
+<img width="1373" height="447" alt="Pasted image 20251109100310" src="https://github.com/user-attachments/assets/717a06bd-c1e4-45a4-823d-896c93e14759" />
+
 
 -> `picoCTF{t`
 
 Có mảnh thứ 2 trong `mycss.css`:
 
-![[Pasted image 20251109100428.png]]
+<img width="768" height="814" alt="Pasted image 20251109100428" src="https://github.com/user-attachments/assets/52311c5a-6c0b-4260-a573-f1dfc395bcc3" />
+
 
 -> `h4ts_4_l0`
 
@@ -46,7 +48,8 @@ Disallow: [đường-dẫn-không-được-vào]
 
 Vậy thì giờ mình chỉ cần thêm `/robots.txt` vào đuôi của url thôi:
 
-![[Pasted image 20251109101305.png]]
+<img width="807" height="211" alt="Pasted image 20251109101305" src="https://github.com/user-attachments/assets/f50ef185-b7ac-4d4f-91f4-51db22ef46cc" />
+
 
 -> Cấm tất cả bot vào `index.html`.
 -> mảnh thứ 3: `t_0f_pl4c`
@@ -70,7 +73,8 @@ Khi kết hợp cả hai lại, thì đây là cách mà máy chủ web Apache t
 
 Vậy với hint 3, mình sẽ xóa `/robots.txt` và thêm `.htaccess` vào đuôi của url:
 
-![[Pasted image 20251109102958.png]]
+<img width="816" height="202" alt="Pasted image 20251109102958" src="https://github.com/user-attachments/assets/91942614-c307-4bf3-8d9c-cf566b270a33" />
+
 
 -> mảnh thứ 4: `3s_2_lO0k`
 
@@ -85,7 +89,8 @@ Với keyword "Mac" và "Store" thì mình biết được hint 4 đang chỉ th
 
 Vậy thì giờ chỉ cần xóa `.htaccess` và thêm `.DS_Store` vào và ấn Enter:
 
-![[Pasted image 20251109103947.png]]
+<img width="790" height="183" alt="Pasted image 20251109103947" src="https://github.com/user-attachments/assets/766dc463-4076-44fa-8982-b34cb6ad12ac" />
+
 
 -> Mảnh cuối cùng: `_35844447}`
 
