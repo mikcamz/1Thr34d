@@ -13,20 +13,22 @@ Hints:
 
 Nhập bla bla bla gì đó thì nó sẽ dẫn bạn đến đây:
 
-![[Pasted image 20251110102023.png]]
+<img width="574" height="188" alt="Pasted image 20251110102023" src="https://github.com/user-attachments/assets/2b90739e-f76c-44b2-b8c2-36db9fed2a0c" />
+
 
 Ok thì giờ mình đi tìm cookie thôi.
 Tui chạy thẳng vào tab `Network` thì thấy biến `secret_recipe` đập vào mắt:
 
-![[Pasted image 20251110102231.png]]
+<img width="1085" height="1107" alt="Pasted image 20251110102231" src="https://github.com/user-attachments/assets/c8a3d7b3-e02e-44dc-a664-760f45f8ca22" />
+
 
 Hoặc bạn có thể vào bên `Application` để tìm nó cũng được:
 
-![[Pasted image 20251110102410.png]]
+<img width="1349" height="1107" alt="Pasted image 20251110102410" src="https://github.com/user-attachments/assets/812dac45-cecb-4b71-a028-8597569eb10e" />
+
 
 Hình như là được encode bằng base64 `cGljb0NURntjMDBrMWVfbTBuc3Rlcl9sMHZlc19jMDBraWVzXzQ3MzZGNkNCfQ`
 
 Giải xong được flag:
 
 => `picoCTF{c00k1e_m0nster_l0ves_c00kies_4736F6CB}`
-

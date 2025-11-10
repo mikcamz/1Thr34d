@@ -9,11 +9,12 @@ Server Side Template Injection
 
 ---
 
-{{self._TemplateReference__context.cycler.__init__.__globals__.os.popen("cat flag").read()}}
+`{{self._TemplateReference__context.cycler.__init__.__globals__.os.popen("cat flag").read()}}`
 
 Đây là trang web mình nhập gì thì nó sẽ in ra thứ đó,
 
-![[Pasted image 20251110104131.png]]
+<img width="467" height="163" alt="Pasted image 20251110104131" src="https://github.com/user-attachments/assets/1d6ac4b5-7c49-442f-be4e-9f5f6975d05e" />
+
 
 Nhập "Hello" thì nó sẽ in ra "Hello", "1 + 1" sẽ ra "1 + 1", và khi tôi nhập "{{1 + 1}}" thì nó sẽ xuất ra "2".
 
@@ -39,7 +40,8 @@ Nó xảy ra khi một ứng dụng web nhúng dữ liệu do người dùng cun
 
 Mình kiểm tra xem web này được viết bằng ngôn ngữ nào, thì thấy đây là Python:
 
-![[Pasted image 20251110105236.png]]
+<img width="648" height="162" alt="Pasted image 20251110105236" src="https://github.com/user-attachments/assets/9e1ba0fb-d227-4d4e-9362-65e371a120bf" />
+
 
 Từ đó mình đến [trang](https://www.yeswehack.com/fr/learn-bug-bounty/server-side-template-injection-exploitation) này để tìm kiếm thêm thông tin và lệnh để khai thác nó:
 https://www.yeswehack.com/fr/learn-bug-bounty/server-side-template-injection-exploitation
@@ -53,14 +55,17 @@ Vì nhập lệnh có dạng `{{}}` nên mình sẽ dùng lệnh khai thác vớ
 Nhập vào web thì thấy bị "Internal Server Error", mình thay `id` vào `()` ở `os.popen()`, thì thấy vẫn lỗi như vậy. 
 Thử thêm 2 dấu ngoặc kép "" thì ra được kết quả:
 
-![[Pasted image 20251110105736.png]]
+<img width="1192" height="394" alt="Pasted image 20251110105736" src="https://github.com/user-attachments/assets/ed40e7b1-86bf-4f72-8276-e3ef908a6fa1" />
+
 
 Vậy mình rút ra rằng, chỉ cần để lệnh trong hai dấu "" thì nó sẽ thực thi, thì giờ mình chạy `"ls"` để list ra file có trong thư mục này, mình được trả về thông tin hữu ích dưới đây:
 
-![[Pasted image 20251110105917.png]]
+<img width="1161" height="325" alt="Pasted image 20251110105917" src="https://github.com/user-attachments/assets/59ace0b5-be90-4ffb-b2dc-47d0af151180" />
+
 
 Giờ chỉ cần thay bằng `"cat flag"` là sẽ ra được flag cần tìm:
 
-![[Pasted image 20251110105955.png]]
+<img width="973" height="89" alt="Pasted image 20251110105955" src="https://github.com/user-attachments/assets/f7b221b3-1661-4c8f-b062-5893ff6ac3b8" />
+
 
 => `picoCTF{s4rv3r_s1d3_t3mp14t3_1nj3ct10n5_4r3_c001_dcdca99a}`

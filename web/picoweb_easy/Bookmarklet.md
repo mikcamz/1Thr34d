@@ -13,7 +13,8 @@ Hints:
 
 Đây là web tác giả đưa:
 
-![[Pasted image 20251110084852.png]]
+<img width="977" height="710" alt="Pasted image 20251110084852" src="https://github.com/user-attachments/assets/e5d9e99f-a36a-450f-bda4-b87cb14271db" />
+
 
 Giờ tìm hiểu bookmarklet là gì đã nha=))
 
@@ -52,11 +53,13 @@ javascript:(function() { var encryptedFlag = "àÒÆÞ¦È¬ëÙ£ÖÓÚåÛÑ
 ```
 
 
-![[Pasted image 20251110085643.png]]
+<img width="978" height="765" alt="Pasted image 20251110085643" src="https://github.com/user-attachments/assets/3964dea6-9c35-422e-8a8a-69d5ce60e2d3" />
+
 
 
 Sau khi ấn mở bookmark thì nó sẽ hiện ra flag:
 
-![[Pasted image 20251110090915.png]]
+<img width="1289" height="816" alt="Pasted image 20251110090915" src="https://github.com/user-attachments/assets/ab426b47-ccd7-47ce-9640-58d533df0f7c" />
+
 
 => `picoCTF{p@g3_turn3r_e8b2d43b}`
