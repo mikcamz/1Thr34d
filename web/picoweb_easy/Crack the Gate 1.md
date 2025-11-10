@@ -11,7 +11,8 @@ Hints:
 
 Ta thấy đoạn mã bí ẩn:
 
-![[Pasted image 20251110112001.png]]
+<img width="1287" height="908" alt="Pasted image 20251110112001" src="https://github.com/user-attachments/assets/da630666-cf18-45dc-bd49-f9e2a067e0d5" />
+
 
 Giải mã ROT13 ta được:
 `NOTE: Jack - temporary bypass: use header "X-Dev-Access: yes"`
@@ -20,14 +21,17 @@ Mình mở Burp lên, quẳng link vô Chromium bên tab Proxy, sau đó ấn Fo
 
 Sau đó thêm `X-Dev-Access: yes` vào đây:
 
-![[Pasted image 20251110112150.png]]
+<img width="1586" height="893" alt="Pasted image 20251110112150" src="https://github.com/user-attachments/assets/def4901a-47fc-4f35-933a-4144684d34bc" />
+
 
 Ấn Forward thì sẽ hiện thông báo:
 
-![[Pasted image 20251110112842.png]]
+<img width="1240" height="973" alt="Pasted image 20251110112842" src="https://github.com/user-attachments/assets/b4b6f013-7ab7-471a-b377-5e92dfc0efbf" />
+
 
 Bạn cũng có thể qua tab Target để xem Response nhá:
 
-![[Pasted image 20251110112945.png]]
+<img width="1580" height="887" alt="Pasted image 20251110112945" src="https://github.com/user-attachments/assets/df82d691-8544-49d4-9c37-a818132378c2" />
+
 
 => `picoCTF{brut4_f0rc4_49d1d186}`
